@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | WeaveBridge Exports</title>
+    <meta
+      name="description"
+      content="Contact WeaveBridge Exports for bedsheet manufacturing, import-export, and consultation requirements."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg"></div>
+
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="WeaveBridge Exports home">
+        <span class="brand-mark">WB</span>
+        <span class="brand-text">
+          <strong>WeaveBridge Exports</strong>
+          <small>Bedsheet Manufacturing and Trade</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero reveal">
+        <p class="kicker">Contact</p>
+        <h1>Tell us your requirement and we will respond quickly.</h1>
+        <p>
+          Share your quantity, quality expectations, destination market, and timeline. Our team
+          will guide you with the right production and trade plan.
+        </p>
+      </section>
+
+      <section class="split reveal">
+        <div class="panel">
+          <h2>Reach Us</h2>
+          <p><strong>Email:</strong> hello@weavebridgeexports.com</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Location:</strong> Meerut, Uttar Pradesh, India</p>
+          <p><strong>Working Hours:</strong> Monday to Saturday, 10:00 AM to 7:00 PM</p>
+        </div>
+
+        <div class="panel">
+          <h2>Send Enquiry</h2>
+          <form class="contact-form" action="mailto:hello@weavebridgeexports.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select one</option>
+              <option value="manufacturing">Bedsheet Manufacturing</option>
+              <option value="import-export">Import Export Support</option>
+              <option value="consultation">Business Consultation</option>
+            </select>
+
+            <label for="message">Requirement Details</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> WeaveBridge Exports. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
